@@ -1,0 +1,187 @@
+:root {
+  --el-text-color-primary: #696969;
+  --el-color-success: #1c8139;
+  --el-color-primary: #0075c9;
+  --el-color-error: #cf222e;
+}
+:root.dark {
+  --el-text-color-primary: #e5eaf3;
+  --el-mask-color: #121212;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: var(--el-text-color-primary);
+  font-family: Inter, Arial, Helvetica, Verdana, sans-serif;
+  line-height: 1.25rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a,
+a:visited {
+  display: block;
+  color: var(--el-color-primary);
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error {
+  margin: 10px 12px;
+}
+.heading {
+  display: flex;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 10px 0 0 14px;
+}
+.heading-logo {
+  margin-right: 5px;
+  padding-top: 2px;
+}
+.heading-controls {
+  flex: 1;
+  margin-left: 20px;
+}
+.heading-toggle {
+  margin-right: 15px;
+}
+
+.title {
+  margin-left: 10px;
+}
+.sub-title {
+  margin-left: 3px;
+}
+
+.content {
+  width: 100%;
+  margin: 15px;
+}
+
+.query-drop-btn {
+  font-weight: bold;
+  height: 28px;
+  padding: 10px;
+  font-size: 16px;
+}
+.query-edit-btn {
+  margin-left: 5px;
+  height: 27px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.data-title {
+  flex: 1;
+  font-weight: bold;
+}
+.data-title-sub {
+  margin-left: 3px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.data-action {
+  width: 100px;
+}
+.data-action button {
+  font-size: 11px;
+  height: 18px;
+  padding: 3px 6px;
+}
+.data-sub {
+  font-size: 13px;
+  line-height: 1;
+  padding-bottom: 2px;
+}
+.data-sub-suffix {
+  margin-left: 4px;
+  white-space: nowrap;
+}
+.data-sub-link {
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+  top: 1px;
+}
+.data-date {
+  line-height: 1.2;
+}
+
+.name-input {
+  width: 600px;
+}
+.name-input .el-input__wrapper {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.name-input .el-input__inner {
+  font-weight: bold;
+  font-size: 16px;
+  height: 28px;
+}
+.query-name {
+  font-size: 18px;
+}
+.query-row {
+  display: flex;
+  margin-top: 10px;
+}
+.field-col {
+  flex: 0 150px;
+}
+.operator-col {
+  flex: 0 150px;
+}
+.value-col {
+  flex: 1;
+}
+.action-col {
+  flex: 0 50px;
+}
+.col-label {
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #ebeef5;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.el-table-filter__bottom button:disabled {
+  display: none;
+}
+.el-table__column-filter-trigger {
+  padding-left: 2px;
+}
+
+.el-dropdown:focus-visible {
+  outline: none;
+}
+
+.el-button:focus-visible {
+  outline: none;
+}
+
+.el-switch {
+  --el-switch-on-color: #3375b9;
+}
+
+.el-popover__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}

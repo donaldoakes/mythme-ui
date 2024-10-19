@@ -1,0 +1,36 @@
+env:
+  es6: true
+  node: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:@typescript-eslint/eslint-recommended'
+  - 'plugin:vue/vue3-recommended'
+  - 'plugin:prettier/recommended'
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+  NodeJS: readonly
+parser: 'vue-eslint-parser'
+parserOptions:
+  parser: '@typescript-eslint/parser'
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+rules: {
+    no-console: 0,
+    semi: 0,
+    eqeqeq: 2, # error
+    no-tabs: 2,
+    curly: [error, multi-line],
+    arrow-spacing: 2,
+    keyword-spacing: 2,
+    space-before-blocks: 2,
+    no-unused-vars: 0,
+    '@typescript-eslint/no-unused-vars':
+      [warn, { vars: all, args: all, argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+    '@typescript-eslint/comma-spacing': [error, { before: false, after: true }],
+    '@typescript-eslint/space-infix-ops': ['warn', { int32Hint: false }],
+    'vue/multi-word-component-names': 0,
+    'prettier/prettier': 1
+  }
