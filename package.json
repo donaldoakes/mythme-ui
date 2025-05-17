@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build --base=/mythme",
-    "deliver": "rm -rf ../mythme/ui && cp -r dist ../mythme/ui",
+    "deliver": "rm -rf ../mythme/src/mythme/ui && cp -r dist ../mythme/src/mythme/ui",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
